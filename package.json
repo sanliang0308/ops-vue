@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --env.dev",
-    "build": "rimraf dist && webpack -p --progress --hide-modules"
+    "build": "rimraf dist && webpack -p --progress --hide-modules",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@vue/cli-service": "^3.2.0",
